@@ -118,7 +118,7 @@ var pdffiller = {
             var currentTime = new Date().getTime();
             var FDFinput = fdf.createFdf(fieldValues);
 
-            var args = [sourceFile, "fill_form", '-', "output", '-'];
+            var args = [sourceFile, "fill_form", '-', "output", '-', 'need_appearances'];
             if (shouldFlatten) {
                 args.push("flatten");
             }
